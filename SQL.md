@@ -48,51 +48,51 @@ database management system
    SHOW TABLES;
 # Constraints :
 <!-- Rules for data in the table -->
-   NOT NULL 
-   UNIQUE
-   DEFAULT
-   CHECK
-   PRIMARY KEY :
-   FOREIGN KEY :
+  * NOT NULL 
+  *  UNIQUE
+  * DEFAULT
+  * CHECK
+  * PRIMARY KEY :
+  * FOREIGN KEY :
    FOREIGN KEY (t-id) references techer(id)
 # Table Queries :
-   CREATE
-   INSERT
-   UPDATE :
+  + CREATE
+  + INSERT
+  + UPDATE :
       <!-- 
       update users
       set followers = 600
       where age = 16; -->
-   ALTER
-   TRUNCATE
-   DELETE :
+  + ALTER
+  + TRUNCATE
+  + DELETE :
       <!--
       delete from users
       where age = 13;
       select * from users; -->
 # Data Types
 
-   char (string 0-255 fixed lenght) CHAR(50)
-   varchar //
-   blob (string 0 - 65535) can store binary large object.
-   int  (-2, 147, 483, 648 to 2, 147, 483, 647)
-   tinyint (-128 to 127)
-   bigint integer()
-   bit(2)  range from 1 to 64;
-   float   precision 23 digits
-   double 24-53 digits
-   boolean
-   date
-   year 4digits (1901 to 2155)
+   - char (string 0-255 fixed length) CHAR(50)
+   - varchar //
+   - blob (string 0 - 65535) can store binary large objects.
+   - int  (-2, 147, 483, 648 to 2, 147, 483, 647)
+   - tinyint (-128 to 127)
+   - bigint integer()
+   - bit(2)  range from 1 to 64;
+   - float   precision 23 digits
+   - double 24-53 digits
+   - boolean
+   - date
+   - year 4digits (1901 to 2155)
 
-   unsigned
+   - unsigned
 
 
    <!-- insert into users (id, name, age, email, followers, following) values
 (1, "adam",18, "adam@yahoo.in", 123,145),
 (2, "bob", 19, "bob123@gmail.com", 200, 200),
-(3, "casey", 20, "casey@gmail.com", 300, 306),
-(4, "donald", 23, "donald@gmail.com", 200, 105);
+(3, "Casey", 20, "casey@gmail.com", 300, 306),
+(4, "Donald", 23, "donald@gmail.com", 200, 105);
 
 insert into users (id, email) values
 (2, "adam@yahoo.in");
@@ -126,19 +126,19 @@ where followers >= 200; -->
    iv)Bitwise Operators:
       & (bitwise AND), | (bitwise OR)
 
-distict
+distinct
 AND : (to check for both conditions to be true)
    <!-- select * from users 
    where age <= 15 and followers > 200 and id > 101; -->
-OR : (to chek for the one of the condition to be true)
+OR : (to check for the one of the conditions to be true)
    <!-- select * from users 
    where age <= 17 or followers > 300 ; -->
 BETWEEN (select for given range) :
    <!-- select * from users
    where age between 16 and 20; -->
 IN (match any value in the list):
-   <!-- select id, name , age, email from  users
-   where email in ("kumar@yahoo.com","casey@yahoo.com","anil@gmail.com","kumar@yahoo.com", "abc.gmail.com"); -->
+   <!-- select id, name, age, email from  users
+   where email in ("kumar@yahoo.com", "casey@yahoo.com", "anil@gmail.com", "kumar@yahoo.com", "abc.gmail.com"); -->
    <!-- where age in (13, 16); -->
 NOT (to negate the given condition)
 
@@ -154,20 +154,20 @@ NOT (to negate the given condition)
    select col_1, col_2 from tbl_name
    order by col_name asc;
    
-   ASC
-   DESC
+  + ASC
+  + DESC
 
 
 # Aggregate Functions :
 
-count() :
++ count() :
    select count(age) from users;
    select count(name) from users;
-max()
-min()
-sum() :
++ max()
++ min()
++ sum() :
    select sum(age) from users;
-avg()
++ avg()
 
    <!-- select max(age) from users;
    select min(age) from users;
@@ -193,12 +193,12 @@ avg()
 
 
 #  General Order :
-   select
-   from
-   where
-   group by
-   having
-   order by
+   _select_
+   _from_
+   _where_
+   _group by_
+   _having_
+   _order by_
 
 
 
